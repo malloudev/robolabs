@@ -14,7 +14,7 @@ Future<void> main() async {
     onCreate: (Database db, int version) async {
       final batch = db.batch();
 
-      batch.execute('CREATE TABLE IF NOT EXISTS userdata(id INTEGER PRIMARY KEY AUTOINCREMENT)');
+      batch.execute('CREATE TABLE IF NOT EXISTS userdata(id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT)');
       batch.execute('CREATE TABLE IF NOT EXISTS courses(id INTEGER PRIMARY KEY AUTOINCREMENT)');
       batch.execute('CREATE TABLE IF NOT EXISTS preferences(id INTEGER PRIMARY KEY AUTOINCREMENT)');
       batch.execute('CREATE TABLE IF NOT EXISTS preferences(id INTEGER PRIMARY KEY AUTOINCREMENT)');

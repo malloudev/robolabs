@@ -16,4 +16,16 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get typewriterMessageThree => 'Innovieren';
+
+  @override
+  String get oauthInfo => 'Mit Google oder Apple einloggen';
+
+  @override
+  String get loginMessage => 'Neuen Account erstellen';
+
+  @override
+  String get loginButton => 'Erstellen';
+
+  @override
+  String get enterName => 'Gebe einen namen für diesen account ein';
 }

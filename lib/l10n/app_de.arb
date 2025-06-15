@@ -1,5 +1,9 @@
 {
   "typewriterMessageOne": "Lernen",
   "typewriterMessageTwo": "Erstellen",
-  "typewriterMessageThree": "Innovieren"
+  "typewriterMessageThree": "Innovieren",
+  "oauthInfo": "Mit Google oder Apple einloggen",
+  "loginMessage": "Neuen Account erstellen",
+  "loginButton": "Erstellen",
+  "enterName": "Gebe einen namen für diesen account ein"
 }

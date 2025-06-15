@@ -115,6 +115,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Innovate'**
   String get typewriterMessageThree;
+
+  /// No description provided for @oauthInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Login via Google or Apple OAuth'**
+  String get oauthInfo;
+
+  /// No description provided for @loginMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Create New Profile'**
+  String get loginMessage;
+
+  /// No description provided for @loginButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Create'**
+  String get loginButton;
+
+  /// No description provided for @enterName.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a name for your account'**
+  String get enterName;
 }
 
 class _AppLocalizationsDelegate

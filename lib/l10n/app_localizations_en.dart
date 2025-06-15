@@ -16,4 +16,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get typewriterMessageThree => 'Innovate';
+
+  @override
+  String get oauthInfo => 'Login via Google or Apple OAuth';
+
+  @override
+  String get loginMessage => 'Create New Profile';
+
+  @override
+  String get loginButton => 'Create';
+
+  @override
+  String get enterName => 'Enter a name for your account';
 }
