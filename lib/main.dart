@@ -16,7 +16,8 @@ Future<void> main() async {
 
       batch.execute('CREATE TABLE IF NOT EXISTS userdata(id INTEGER PRIMARY KEY AUTOINCREMENT)');
       batch.execute('CREATE TABLE IF NOT EXISTS courses(id INTEGER PRIMARY KEY AUTOINCREMENT)');
-      batch.execute('CREATE TABLE IF NOT EXISTS preferences(id PRIMARY KEY AUTOINCREMENT)');
+      batch.execute('CREATE TABLE IF NOT EXISTS preferences(id INTEGER PRIMARY KEY AUTOINCREMENT)');
+      batch.execute('CREATE TABLE IF NOT EXISTS preferences(id INTEGER PRIMARY KEY AUTOINCREMENT)');
 
       await batch.commit();
     }
@@ -34,6 +35,9 @@ class Application extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
+      darkTheme: ThemeData.dark(),
+      theme: ThemeData.light(),
+      themeMode: ThemeMode.system,
       routes: <String, WidgetBuilder>{
         '/': (_) => SplashScreen()
       },

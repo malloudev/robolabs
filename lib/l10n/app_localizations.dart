@@ -97,6 +97,24 @@ abstract class AppLocalizations {
     Locale('de'),
     Locale('en'),
   ];
+
+  /// No description provided for @typewriterMessageOne.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn'**
+  String get typewriterMessageOne;
+
+  /// No description provided for @typewriterMessageTwo.
+  ///
+  /// In en, this message translates to:
+  /// **'Create'**
+  String get typewriterMessageTwo;
+
+  /// No description provided for @typewriterMessageThree.
+  ///
+  /// In en, this message translates to:
+  /// **'Innovate'**
+  String get typewriterMessageThree;
 }
 
 class _AppLocalizationsDelegate
