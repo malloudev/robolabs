@@ -6,5 +6,6 @@
   "loginMessage": "Neuen Account erstellen",
   "loginButton": "Erstellen",
   "enterName": "Gebe einen namen für diesen account ein",
-  "homepageLabel": "Startseite"
+  "homepageLabel": "Startseite",
+  "practiceLabel": "Üben"
 }

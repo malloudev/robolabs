@@ -49,6 +49,10 @@ class _OverviewState extends State<OverviewRoute> {
           BottomNavigationBarItem(
             icon: const Icon(Icons.home),
             label: AppLocalizations.of(context)!.homepageLabel
+          ),
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.school_rounded),
+            label: AppLocalizations.of(context)!.practiceLabel
           )
         ]
       )

@@ -6,5 +6,6 @@
   "loginMessage": "Create New Profile",
   "loginButton": "Create",
   "enterName": "Enter a name for your account",
-  "homepageLabel": "Home"
+  "homepageLabel": "Home",
+  "practiceLabel": "Practice"
 }
