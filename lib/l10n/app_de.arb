@@ -7,5 +7,7 @@
   "loginButton": "Erstellen",
   "enterName": "Gebe einen namen für diesen account ein",
   "homepageLabel": "Startseite",
-  "practiceLabel": "Üben"
+  "practiceLabel": "Üben",
+  "courseLabel": "Kurse",
+  "filesLabel": "Dateien"
 }

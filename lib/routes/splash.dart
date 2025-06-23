@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:robolabs/components/databaseWrapper.dart';
 import 'package:snow_fall_animation/snow_fall_animation.dart';
 import 'package:typewritertext/typewritertext.dart';
 import 'package:auth_buttons/auth_buttons.dart';
@@ -16,6 +17,14 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var Size(width: devWidth, height: devHeight) = MediaQuery.of(context).size;
+
+    DatabaseWrapper.get('userdata').then((contents) {
+      if(contents.isNotEmpty) {
+        Navigator.of(context).popAndPushNamed('/overview', arguments: {
+          'userdataOverride': contents.first['username']
+        });
+      }
+    });
 
     return Scaffold(
       body: Stack(children: [
@@ -78,7 +87,10 @@ class SplashScreen extends StatelessWidget {
                           final content = _textEditingController.text;
                           _textEditingController.clear();
 
-                          // TODO
+                          DatabaseWrapper.enterUser(content);
+                          Navigator.of(context).popAndPushNamed('/overview', arguments: {
+                            'usernameOverride': content
+                          });
                         }
                       },
                       child: Padding(

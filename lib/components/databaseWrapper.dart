@@ -5,7 +5,7 @@ import 'package:path/path.dart';
 abstract final class DatabaseWrapper {
   static late Database _db;
 
-  static void ensureInitialized() async {
+  static Future<void> ensureInitialized() async {
     _db = await openDatabase(
       join(await getDatabasesPath(), 'robolabs.db'),
       version: 1,
@@ -20,6 +20,10 @@ abstract final class DatabaseWrapper {
         await batch.commit();
       }
     );
+  }
+
+  static Future<List<Map<String, Object?>>> get(String table) {
+    return _db.query(table);
   }
 
   static void enterUser(String name) {

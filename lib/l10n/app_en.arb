@@ -7,5 +7,7 @@
   "loginButton": "Create",
   "enterName": "Enter a name for your account",
   "homepageLabel": "Home",
-  "practiceLabel": "Practice"
+  "practiceLabel": "Practice",
+  "coursesLabel": "Courses",
+  "filesLabel": "File History"
 }

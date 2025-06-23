@@ -28,4 +28,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get enterName => 'Enter a name for your account';
+
+  @override
+  String get homepageLabel => 'Home';
+
+  @override
+  String get practiceLabel => 'Practice';
+
+  @override
+  String get coursesLabel => 'Courses';
+
+  @override
+  String get filesLabel => 'File History';
 }

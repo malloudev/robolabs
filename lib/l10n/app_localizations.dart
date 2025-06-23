@@ -139,6 +139,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Enter a name for your account'**
   String get enterName;
+
+  /// No description provided for @homepageLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get homepageLabel;
+
+  /// No description provided for @practiceLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice'**
+  String get practiceLabel;
+
+  /// No description provided for @coursesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Courses'**
+  String get coursesLabel;
+
+  /// No description provided for @filesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'File History'**
+  String get filesLabel;
 }
 
 class _AppLocalizationsDelegate

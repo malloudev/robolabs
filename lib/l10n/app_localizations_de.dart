@@ -28,4 +28,16 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get enterName => 'Gebe einen namen für diesen account ein';
+
+  @override
+  String get homepageLabel => 'Startseite';
+
+  @override
+  String get practiceLabel => 'Üben';
+
+  @override
+  String get coursesLabel => 'Courses';
+
+  @override
+  String get filesLabel => 'Dateien';
 }
